@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
         button.setOnClickListener(e -> {
             Intent intent = new Intent(this, ResultActivity.class);
-            intent.putExtra("size", editSize.getText());
-            intent.putExtra("count", editCount.getText());
-            intent.putExtra("kras", edicKras.getText());
-            intent.putExtra("mutation", editMutation.getText());
+            intent.putExtra("size", editSize.getText().toString());
+            intent.putExtra("count", editCount.getText().toString());
+            intent.putExtra("kras", edicKras.getText().toString());
+            intent.putExtra("mutation", editMutation.getText().toString());
             startActivity(intent);
         });
     }

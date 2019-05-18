@@ -18,13 +18,16 @@ public class Genetic {
         System.out.println();
     }
 
-    public Chromosome evolution() {
-        int iterationsCount = 10;
-        int chromosomesCount = 10; //Количество Хромосом
+    public Chromosome evolution(int chromosomesCount,
+                                int iterationsCount,
+                                double operatorChance,
+                                double mutationChance) {
+        //int iterationsCount = 10;
+        //int chromosomesCount = 10; //Количество Хромосом
         double minInterval = 0; //Начало отрезка
         double maxInterval = 20; //Конец отрезка
-        double operatorChance = 0.5;
-        double mutationChance = 0.5;
+        //double operatorChance = 0.5;
+        //double mutationChance = 0.5;
 
         final int chromosomesSize = NumberUtil.getChromosomeSize((INTERVALS_COUNT * (int)(maxInterval - minInterval)));
         int count = 0; //количество итераций

@@ -28,14 +28,14 @@ public class ResultActivity extends AppCompatActivity {
         function = findViewById(R.id.function);
         button = findViewById(R.id.graphicButton);
 
-//        Intent intent  = getIntent();
-//        Integer size = Integer.valueOf(intent.getStringExtra("size"));
-//        Integer count = Integer.valueOf(intent.getStringExtra("count"));
-//        Double kras = Double.valueOf(intent.getStringExtra("kras"));
-//        Double mutation = Double.valueOf(intent.getStringExtra("mutation"));
+        Intent intentt  = getIntent();
+        Integer size = Integer.valueOf(intentt.getStringExtra("size"));
+        Integer count = Integer.valueOf(intentt.getStringExtra("count"));
+        Double kras = Double.valueOf(intentt.getStringExtra("kras"));
+        Double mutation = Double.valueOf(intentt.getStringExtra("mutation"));
 
         Genetic genetic = new Genetic();
-        Chromosome bestChromosome = genetic.evolution();
+        Chromosome bestChromosome = genetic.evolution(size, count, kras, mutation);
 
         best.setText(bestChromosome.getBinary());
         value.setText(bestChromosome.getDecimal().toString());

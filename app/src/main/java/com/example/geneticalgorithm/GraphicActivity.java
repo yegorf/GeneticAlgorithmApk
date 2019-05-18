@@ -14,8 +14,6 @@ public class GraphicActivity extends AppCompatActivity {
 
     LineGraphSeries<DataPoint> series;
     PointsGraphSeries<DataPoint> points;
-    DataPoint point;
-    GraphView graphView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
