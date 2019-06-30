@@ -20,7 +20,7 @@ public class Chromosome {
         this.decimal = NumberUtil.getChromosomeValue(this.binary, minInterval, maxInterval);
     }
 
-    public Chromosome(String binary, Double decimal, Double functionValue, int copiesCount) {
+    private Chromosome(String binary, Double decimal, Double functionValue, int copiesCount) {
         this.binary = binary;
         this.decimal = decimal;
         this.functionValue = functionValue;

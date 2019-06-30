@@ -1,19 +1,17 @@
-package com.example.geneticalgorithm;
+package com.example.geneticalgorithm.activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.geneticalgorithm.logic.Genetic;
-import com.jjoe64.graphview.GraphView;
+import com.example.geneticalgorithm.R;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
 public class MainActivity extends AppCompatActivity {
 
-    LineGraphSeries<DataPoint> series;
     Button button;
     EditText editSize;
     EditText editCount;

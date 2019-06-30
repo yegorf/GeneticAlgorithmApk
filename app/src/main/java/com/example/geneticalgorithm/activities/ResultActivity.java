@@ -1,13 +1,12 @@
-package com.example.geneticalgorithm;
+package com.example.geneticalgorithm.activities;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.geneticalgorithm.R;
 import com.example.geneticalgorithm.logic.Genetic;
 import com.example.geneticalgorithm.tools.Chromosome;
 
@@ -28,7 +27,7 @@ public class ResultActivity extends AppCompatActivity {
         function = findViewById(R.id.function);
         button = findViewById(R.id.graphicButton);
 
-        Intent intentt  = getIntent();
+        Intent intentt = getIntent();
         Integer size = Integer.valueOf(intentt.getStringExtra("size"));
         Integer count = Integer.valueOf(intentt.getStringExtra("count"));
         Double kras = Double.valueOf(intentt.getStringExtra("kras"));
